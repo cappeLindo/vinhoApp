@@ -18,6 +18,11 @@ export default function App() {
                 tabBarInactiveTintColor: theme.colors.secundary,
                 tabBarLabelStyle: styles.tabLabel,
                 tabBarActiveBackgroundColor: theme.colors.primary,
+                headerTitleAlign: 'center',
+                headerStyle: {
+                    backgroundColor: theme.colors.primary,
+                },
+                headerTintColor: theme.colors.active,
             }}
         >
             <Tabs.Screen
