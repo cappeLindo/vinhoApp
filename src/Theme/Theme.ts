@@ -4,14 +4,18 @@ export const theme = {
         secundary: '#ab887c',
         active: '#ffff',
         inactive: '#f1aea5ff',
+        contactsBorderColor: '#d1d1d1ff',
     },
     fonts: { 
         sizes: { 
+            text: 14,
             title: 24,
             subTitle: 18,
-            text: 14,
             textWine: 17,
-            titleWine: 28
+            titleWine: 28,
+            contactsTitle: 20,
+            titlePageHome: 32,
+            contactsTitleCard: 22,
         }
     },
 }

@@ -7,7 +7,6 @@ type props = {
     image?: unknown,
 }
 
-
 export function CatalogoCardPage(props: props) { 
     return (
         <View style={styles.containerCard}>
@@ -24,30 +23,30 @@ export function CatalogoCardPage(props: props) {
 
 const styles = StyleSheet.create({
     containerCard: { 
-        alignItems: 'center',
         marginTop: 16,
+        alignItems: 'center',
 
     },
     cards: { 
-        backgroundColor: theme.colors.secundary,
-        width: "95%",
-        flexDirection: 'row',
         padding: 10,
+        width: "95%",
         borderRadius: 12,        
+        flexDirection: 'row',
+        backgroundColor: theme.colors.secundary,
     },
     titleCard: { 
-        fontSize: theme.fonts.sizes.subTitle,
         fontWeight: 600,
+        marginBottom: 20,
         color: theme.colors.active,
-        marginBottom: 20
+        fontSize: theme.fonts.sizes.subTitle,
     },
     textCard: { 
         
     },
     imageCard: { 
-        width: 33,
+        width: 35,
         height: 150,
-        marginLeft: 30
+        marginLeft: 20
     },
     alingText: { 
         flexShrink: 1,
@@ -55,6 +54,7 @@ const styles = StyleSheet.create({
 
     },
     subTitle: { 
+        lineHeight: 22,
         color: theme.colors.active,
     }
 });
