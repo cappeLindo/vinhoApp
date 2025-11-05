@@ -1,10 +1,11 @@
-import { Image, Text, View } from "react-native";
+import { Image, Text, View, StyleSheet } from "react-native";
 import { CatalogoCardPage } from "../props/ComponentsCardCatalogo";
+import { theme } from "../Theme/Theme";
 
 export function CatalogoPage() {
     return (
         <View>
-            <Text>Nossos Vinhos</Text>
+            <Text style={StyleSheet.title}>Nossos Vinhos</Text>
             <CatalogoCardPage title="Portada Winemaker's"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare
             vitae sapien et euismod. Pellentesque habitant morbi tristique senectus
@@ -21,3 +22,9 @@ export function CatalogoPage() {
         </View>
     );
 }
+
+const style = StyleSheet.create({
+    title: { 
+        fontSize: theme.fonts.sizes.title
+    }
+})
