@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         width: "95%",
         flexDirection: 'row',
         padding: 10,
-        borderRadius: 16,        
+        borderRadius: 12,        
     },
     titleCard: { 
         fontSize: theme.fonts.sizes.subTitle,

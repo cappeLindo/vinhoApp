@@ -10,6 +10,8 @@ export const theme = {
             title: 24,
             subTitle: 18,
             text: 14,
+            textWine: 17,
+            titleWine: 28
         }
     },
 }
