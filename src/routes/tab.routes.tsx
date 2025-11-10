@@ -9,20 +9,19 @@ import { ContatoPage } from '../screens/Contatos';
 
 const Tabs = createBottomTabNavigator();
 
-export default function App() {
+export default function TabRoutes() {
     return (
         <Tabs.Navigator
-            screenOptions={{
-                tabBarStyle: styles.tabContainer,
+        screenOptions={{
+                headerTitleAlign: 'center',
+                tabBarLabelStyle: styles.tabLabel,
+                headerTintColor: theme.colors.active,
                 tabBarActiveTintColor: theme.colors.active,
                 tabBarInactiveTintColor: theme.colors.secundary,
-                tabBarLabelStyle: styles.tabLabel,
                 tabBarActiveBackgroundColor: theme.colors.primary,
-                headerTitleAlign: 'center',
                 headerStyle: {
                     backgroundColor: theme.colors.primary,
                 },
-                headerTintColor: theme.colors.active,
             }}
         >
             <Tabs.Screen
@@ -57,11 +56,8 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-    tabContainer: {
-        height: '8%',
-    },
     tabLabel: {
         fontSize: 12,
         fontWeight: '800',
-    },
+    }
 });
